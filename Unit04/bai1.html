@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit04</title>
+	<link href="https://fonts.googleapis.com/css?family=Laila|Merriweather|Montserrat|Open+Sans|Oswald|PT+Sans|Playfair+Display|Roboto|Roboto+Condensed|Source+Sans+Pro|Srisakdi|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<style type="text/css">
+	@font-face{
+		font-family: 'font-o-ly';
+		src:url('fontmoi/UNITapviet_5_ly.ttf');
+	}
+	.rec{
+		width: 400px;
+		height: 200px;
+		background-color: #ccc;
+		border: 1px solid red
+	}
+	#box-model{
+		border: 1px solid red;
+		margin:20px;
+		margin-right: 50px; 
+		font-family: 'font-o-ly';
+	}
+	.child{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: absolute;
+	}
+	#child1{
+		top: 40px;
+		left: 50px;
+		z-index: 1;
+	}
+	#child2{
+		top: 100px;
+		left: 70px;
+		background-color: blue;	
+		z-index: 0;
+	}
+
+	</style>
+
+</head>
+<body>
+	<div class="rec" class="fa fa-bicycle"><span ></span>Top</div>
+	<div class="rec" id="box-model">Hôm nay là thứ bảy</div>
+	<div class="rec">Bottom <br>
+		<div class="fa fa-battery-quarter " >Hôm nay là thứ bảy</div>
+		<div class="child" id="child1"></div>
+		<div class="child" id="child2"></div>
+	</div>
+
+</body>
+</html>

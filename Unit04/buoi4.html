@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit04</title>
+	<link href="https://fonts.googleapis.com/css?family=Laila|Merriweather|Montserrat|Open+Sans|Oswald|PT+Sans|Playfair+Display|Roboto|Roboto+Condensed|Source+Sans+Pro|Srisakdi|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<style type="text/css">
+	@font-face{
+		font-family: 'font-o-ly';
+		src:url('fontmoi/UNITapviet_5_ly.ttf');
+	}
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	ul{
+		list-style: none;
+
+	}
+	.menu-lv1{
+		float: left;
+		position: relative;
+	}
+	.menu{
+		width: 100px;
+		height: 50px; 
+		border: 1px solid white; 
+		color: white;
+		padding: 2px;
+		line-height: 50px;
+		text-align: center; 
+		background-color: green;      
+	}
+	.parent-lv2{
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.nenu-lv1:hover .parent-lv2{
+		display: block;
+	}
+	.menu:hover{
+		background-image: lightgreen;
+	}
+
+	</style>
+
+</head>
+<body>
+	<ul id="menu">
+		<li class="menu-lv1 menu">Trang chủ</li>
+		<li class="menu-lv1 menu">Tin tức</li>
+		<li class="menu-lv1 menu">
+			<ul id="parent-lv2">
+				<li class="menu-lv2 menu">Tin xã hội</li>
+				<li class="menu-lv2 menu">Tin xã hội</li>
+				<li class="menu-lv2 menu">Tin xã hội</li>
+				<li class="menu-lv2 menu">Tin xã hội</li>
+				<li class="menu-lv2 menu">Tin xã hội</li>
+				<li class="menu-lv2 menu">Tin xã hội</li>
+			</ul>
+		</li>
+		<li class="menu-lv1 menu"> Xã hội</li>
+		<li class="menu-lv menu">Espost</li>
+		<li class="menu-lv1 menu">MMO</li>
+	</ul>
+
+</body>
+</html>

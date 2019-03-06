@@ -1,0 +1,97 @@
+
+h3{
+	border-color: blue;
+	width: 20%;
+	height: 200px;
+	color: green;
+	/*align-content: ;
+	background-color: blue;
+	background-image: url('Unit01/Samsung2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position:50px 30px;*/
+	background: red   no-repeat 60px 30px scroll;
+	background-image: url('Unit01/Samsung2.jpg');
+
+	font-family: Arial;
+	font-size:  20px;
+	font-style: normal;
+	font-weight: 800;
+
+	color: blue;
+	text-indent:  60px;
+	text-align: left;
+
+	
+	
+	
+	text-decoration: line-none;
+	display: inline-block;
+
+}
+a{
+	text-decoration: none;
+}
+#child{
+	display: block;
+}
+h3:hover{
+	
+	color: brown;
+	height: 400px;
+	width: 20%;
+
+
+
+}
+div{
+
+	font-size: 20px;
+	height: 200px;
+	width: 100%;
+	background-color: #ccc;
+}
+div{
+	
+	border-radius: 10px;
+	background-color: #ccc;
+}
+#header{
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell;
+	align-content: center;
+	width: 40%;
+	height: 100px;
+	background-color: brown;
+	clear: left;
+	overflow: auto;
+}
+#left{
+	width: 10%;
+	height: 100px;
+	background-color: green;
+	float: left;
+}
+#main{
+	width: 20%;
+	height: 100px;
+	background-color: blue;
+	float: left;
+}
+
+#right{
+	width: 10%;
+	height: 100px;
+	background-color: red;
+	float: left;
+}
+#footer{
+	width: 40%;
+	height: 100px;
+	background-color: brown;
+	clear: left;
+}
+
+
+
