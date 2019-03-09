@@ -1,0 +1,222 @@
+*{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+.full{
+	width:100%;
+}
+.container{
+	width:80%;
+	margin:0 auto;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+#magazine{
+	height: 30px;
+	background-color: #272424;
+}
+#logo{
+	height:80px;
+	background-color: #bb7e0e;
+}
+#menu{
+	height:50px;
+	background-color: #ae1e1e;
+}
+#truy-cap-nhanh li{
+	float:left;
+	padding:5px;
+	text-transform: uppercase;
+	font-size:13px;
+}
+#truy-cap-nhanh .fa-star{
+	color:orange;
+	margin-right: 4px;
+}
+#search{
+	position: relative;
+}
+#search .fa-search{
+	position: absolute;
+	top: 6px;
+	left: 142px;
+}
+#search input{
+	margin-top:5px;
+}
+#logo img{
+	width:70px;
+	height:70px;
+}
+#logo ul {
+	margin:15px 20px;
+}
+#logo ul li{
+	margin-left:5px;
+	padding:5px;
+	float:left;
+	line-height: 25px;
+	height:25px;
+	border:1px solid white;
+	border-radius: 10px;
+}
+#logo a, #menu a, #truy-cap-nhanh a{
+	color:white !important;
+}
+#menu li{
+	float:left;
+	padding:15px;
+}
+
+#menu li:hover{
+	background-color: red;
+}
+/*code từ đây*/
+#grey{
+	background-color: #ccc;
+	height: 30px;
+}
+#tin-tuc{
+	margin-top:10px;
+	width:68%;
+	margin-right: 5px;
+}
+#ads{
+	margin-top:10px;
+	width:30%;
+}
+#tin-nong .left img{
+	width: 100%;
+	height: 350px;
+}
+#tin-nong .right img{
+	width: 100%;
+	height: 350px;
+}
+#tin-nong .left{
+	width:70%;
+	margin-right: 10px;
+}
+#tin-nong .right{
+	width:28%;
+}
+#tin-lien-quan{
+	margin-top: 50px;
+	height:200px;
+	clear: both;
+}
+#tin-lien-quan img{
+	width:100%;
+	height:200px;
+}
+.p-3{
+	width:32%;
+	float:left;
+}
+.middle{
+	margin-right:13px;
+	margin-left:13px;
+}
+#tin-nong h2, #tin-nong h4,#tin-lien-quan h4{
+	text-align: justify;
+}
+#tin-cu{
+	margin-top: 50px;
+	height:200px;
+	clear: both;
+}
+#tin-cu img{
+	width: 30%;
+	height: 200px;
+	float:left; 
+}
+
+#tin-dang-chu-y{
+	padding: 11px 10px ;
+	background-color: #222;
+	color: white;
+	border-radius: 3px;
+}
+#tin-dang-chu-y a{
+	
+	margin-left: 10px;
+	color: white;
+	/*float: center;*/
+}
+#tin-dang-chu-y .abc{
+	height: 40px;
+    background-color: #227;
+    padding-left: 20px;
+    margin: -9px;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 40px;
+
+#cac-tin-khac{
+	width: 80%;
+	margin:0 auto;
+}
+#thoi-su{
+	width: 33%;
+	margin: auto;
+	float: left;
+
+}
+#thoi-su .top{
+	color: orange;
+}
+#thoi-su img{
+	width: 350px;
+	height: 250px;
+}
+#thoi-su .p-6 img{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+#giai-tri{
+	width: 33%;
+	margin: auto;
+	float: left;
+}
+#giai-tri img{
+ 	width: 350px;
+ 	height: 250px;
+ 	
+}
+.mid{
+
+	float: left;
+}
+#giai-tri .p-5 img{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+#tin-moi-nhat{
+	width: 33%;
+	height: 250px;
+	float: left;
+}
+#tin-moi-nhat .mid ul li{
+	padding: 0 12px;
+	}
+
+
+#menu-duoi{
+	margin-top: 50px;
+	height:200px;
+	clear: both;
+}
