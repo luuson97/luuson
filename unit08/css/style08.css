@@ -1,0 +1,26 @@
+.content{
+	width: 65%;
+	height: 100px;
+	display: inline-block;
+	
+}
+.left{
+	width: 15%;
+	float: left;
+/*	background-color: #222;*/
+}
+.center1{
+	width: 15%;
+	float: left;
+	/*background-color: orange;*/
+}
+.center1{
+	width: 15%;
+	float: left;
+	/*background-color: orange;*/
+}
+.right{
+	width: 15%;
+	float: left;
+	/*background-color:red;*/
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/style08.css">
+</head>
+<body>
+	<div class="content">
+		<div class="left">
+			<script type="text/javascript">
+				{
+					var i;j;m=1;
+					for (var i = 0; i < 10; i++) {
+						for (var j = 0; j < m; j++) {
+							document.write("*");
+						}
+						m++;
+						document.write("<br>");
+					}
+				}
+			</script>
+		</div>
+		<div class="center1">
+			<script type="text/javascript">
+				{
+					var i;j;
+					for (var i = 0; i < 10; i++) {
+						for (var j = 0; j < 10; j++) {
+							document.write("*");
+						}
+						document.write("<br>");
+					}
+				}
+			</script>
+		</div>
+		<div class="right">
+			<script type="text/javascript">
+				{
+					var i;j;
+					for (var i = 0; i < 10; i++) {
+						document.write("*");
+					}document.write("<br>");
+					for (var i = 0; i < 8; i++) {
+						for (var j = 0; j < 10; j++) {
+							if (j !=0 && j != 9) {
+								document.write("&nbsp&nbsp");
+							}
+							else document.write("*");
+						}
+						document.write("<br>");
+					}
+					for (var i = 0; i < 10; i++) {
+						document.write("*");
+					}
+				}
+			</script>
+		</div>
+		<div class="center2">
+				<script type="text/javascript">
+				{
+					var i;j;m=10;
+					for (var i = 0; i < 10; i++) {
+						for (var j = 0; j < m; j++) {
+							document.write("*");
+						}
+						m--;
+						document.write("<br>");
+					}
+				}
+			</script>
+		</div>
+	</div>
+	
+</body>
+</html>
