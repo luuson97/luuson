@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BAI 9.1</title>
+	<link rel="stylesheet" href="css/bai91.css">
+
+</head>
+ <body>
+        <div class="container">
+            <div class="tab">
+              <button class="tablinks active">tab1</button>
+              <button class="tablinks">tab2</button>
+              <button class="tablinks">tab3</button>
+            </div>
+
+            <div id="tab1" class="tabcontent">
+                <h3>tab1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, dolorum.Lorem 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, deserunt.
+                </p>
+            </div>
+
+            <div id="tab2" class="tabcontent">
+                <h3>tab2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas consequuntur tenetur, molestiae explicabo quasi accusantium reprehenderit inventore sed recusandae maiores magni libero assumenda nulla reiciendis fugiat esse non temporibus optio.
+                </p> 
+            </div>
+
+            <div id="tab3" class="tabcontent">
+                <h3>tab3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque molestiae, est recusandae quae harum repellat obcaecati voluptate a mollitia unde nulla dolorem rem quia praesentium expedita molestias, ipsam at aliquid aspernatur accusantium. Doloribus, natus suscipit aliquam voluptas quod dolorem aut provident dicta rem. Quod, eaque enim soluta dolorum doloribus.
+                </p>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        var buttons = document.getElementsByClassName('tablinks');
+        var contents = document.getElementsByClassName('tabcontent');
+        function showContent(id){
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            var content = document.getElementById(id);
+            content.style.display = 'block';
+        }
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function(){
+                var id = this.textContent;
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].classList.remove("active");
+                }
+                this.className += " active";
+                showContent(id);
+            });
+        }
+        showContent('tab1');
+    </script>
+</html>

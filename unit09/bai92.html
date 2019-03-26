@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css" media="screen">
+		#wrapper{
+			width: 40%;
+			background-color: #24a88c;
+		}
+		.p8{
+			width: 100%;
+			border: 1px solid #2b496e;
+			
+			display: inline-block;
+		}
+		.checkBox{
+			width: 10%;
+			float: left;
+ 			text-align: center;
+ 			padding-top: 15px;
+		}
+		.text{
+
+			
+			width: 89%;
+			float: left;
+		}
+	
+	</style>
+
+</head>
+<body>
+	<div id="wrapper">
+		<div class="p8">
+			<div class="checkBox">
+				<input type="checkbox" name="" value="">
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet.</p>
+
+			</div>
+
+		</div>
+		<div class="p8">
+			<div class="checkBox">
+				<input type="checkbox" name="" value="">
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet.</p>
+
+			</div>
+
+		</div>
+		<div class="p8">
+			<div class="checkBox">
+				<input type="checkbox" name="" value="">
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet.</p>
+
+			</div>
+
+		</div>
+		<div class="p8">
+			<div class="checkBox">
+				<input type="checkbox" name="" value="">
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet.</p>
+
+			</div>
+
+		</div>
+		<div class="p8">
+			<div class="checkBox">
+				<input type="checkbox" name="" value="">
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet.</p>
+
+			</div>
+
+		</div>
+		<div class="p8">
+			<div class="checkBox">
+				<input type="checkbox" name="" value="">
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet.</p>
+
+			</div>
+
+		</div>
+		<div class="p8">
+			<div class="checkBox">
+				<input type="checkbox" name="" value="">
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet.</p>
+
+			</div>
+
+		</div>
+		<div class="p8">
+			<div class="checkBox">
+				<input type="checkbox" name="" value="">
+			</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet.</p>
+
+			</div>
+
+		</div>
+		<div class="p2">
+			<div class="p2lv2">
+				<button class="check">Check All</button>
+				<button class="uncheck">Uncheck All</button>
+			</div>
+			
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var input = document.getElementsByTagName("input");
+
+	document.getElementsByClassName("check")[0].addEventListener("click", function(){
+		for (var i = 0; i < input.length; i++) {
+			input[i].checked=true;
+		}
+	});
+
+	document.getElementsByClassName("uncheck")[0].addEventListener("click", function(){
+		for (var i = 0; i < input.length; i++) {
+			input[i].checked=false;
+		}
+	});
+
+</script>
+</html>
