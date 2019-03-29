@@ -1,0 +1,45 @@
+<html lang="en"><head>
+    <title>Bai 10.1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bai101.css">
+    <link rel="stylesheet" href="font/css/font-awesome.css">
+</head>
+
+<body>
+ 
+        <div class="slider">
+            <img src="images/img1.gif" style="opacity: 0;">
+            <img src="images/img2.gif" style="opacity: 0.7;">
+            <img src="images/img3.gif" style="opacity: 0.3;">
+            <img src="images/img4.gif" style="opacity: 0;">
+            <img src="images/img5.gif" style="opacity: 0;">
+            <button type="button" onclick="getPrevImage()" class="btn" id="btnPrev">&lt;</button>
+            <button type="button" onclick="getNextImage()" class="btn" id="btnNext">&gt;</button>
+            <!-- <h1 id="titleSlider">Slide Title 3</h1> -->
+            <ul id="titleSlider">
+            	<a href="" class="fa fa-circle-o"><li><i class="fa fa-circle" aria-hidden="true">s</i></li></a>
+            	<li >
+            		<i class="fa fa-circle-o" aria-hidden="true"></i>
+            	</li>
+            	<li><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+            	<li><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+            	<li><i class="fa fa-circle-o" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script>
+    	// Chỉ số hình đầu tiên hiển thị ở slide
+        var indexCurrent = 1;    
+        // Bật lặp slide 
+        var loop = true;  
+        // Hiện 2 button điều hướng
+        var showbutton =true;  
+        // Thời gian chờ chuyển hình
+        var duration = 10000;   
+
+        initSlider();
+    </script>
+
+
+</body></html>
