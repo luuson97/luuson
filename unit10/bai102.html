@@ -8,142 +8,141 @@
 	<link rel="stylesheet" href="font/css/font-awesome.css">
 	<style type="text/css" media="screen">
 
-		div.content {
-			width: 72%;
-			height: auto;
-			margin: 10px 312px;
-			
-		}
-		.content{
-			border: 1px;
-			border-color: red;
-		}
-		div.footer{
-			width: 15%;
-			margin:10px auto;
-		}
-		.left{
-			margin:3px;
-			width: %;	
-			float: left;
-		}
-		.center{
-			width: 25%;	
-			float: left;
-			margin:3px;
-		}
-		.right{
-			width: 26%;	
-			float: left;
-			margin:3px;
-		}
-		.item-content{
-			list-style: none;
-			margin-top: 10px;
-		}
-		.item{
-			margin-top: 10px;
-		}
-		.item1{
-			margin-top: 18px;
-			font-size: none;
-			display: none;
-			color:red;
-		}
-		.active{
-			margin-top: 18px;
-			font-size: none;
-			display: block;
-			color:red;
-			
-		}
-		.clear{
-			clear: both;
-		}
+	p{
+      margin-left: 30%;
+      width: 60%;
+      display: inline-block;
+    }
+    .name{
+      width: 25%;
+      float: left;
+    }
+    .text{
+      width: 35%;
+      float: left;
+    }
+    span{
+      margin-left: 2%;
+    }
 	</style>
 </head>
 <body onload="load()">
-	<form name="formDangKy">
-	<div class="content">
-		<div class="left">
-			<ul class="item-content">
-				<li class="item">Họ và tên</li>
-				<li class="item">Giới tính</li>
-				<li class="item">Email</li>
-				<li class="item">Số điện thoại</li>
-				<li class="item">Mật khẩu</li>
-				<li class="item">Xác nhận mật khẩu</li>
-			</ul>
-		</div>
-		<div class="center">
-			<ul class="item-content">
-				<li class="item">
-					<input id="hoVaTen" type="text" name="name" value="" placeholder="Nhập tên">
-				</li>
-				<li class="item">
-					<input id="gioiTinh" type="radio" name="gioiTinh" value="Nam" placeholder=""/>Nam
-				 	<input id="gioiTinh" type="radio" name="gioiTinh" value="Nu" placeholder=""/>Nữ
-				</li>
-				<li class="item">
-					<input id="email" type="text" name="name" placeholder="Nhập email">
-				</li>
-				<li class="item">
-					<input id="soDienThoai" type="text" name="name" placeholder="Nhập số điện thoại">
-				</li>
-				<li id="matKhau" class="item">
-					<input type="password" name="matKhau" value="" placeholder="Nhập mật khẩu"/>
-				</li>
-				<li id="xnMatKhau" class="item">
-					<input type="password" name="matKhau" value="" placeholder="Nhập mật khẩu"/>
-				</li>
-			</ul>
-		</div>
-		<div class="right">
-			<ul class="item-content">
-				<li class="item1 ">Yêu cầu nhập đầy đủ họ tên</li>
-				<li class="item1 ">Yêu cầu chọn giới tính</li>
-				<li class="item1 ">Yêu cầu nhập số điện thoại</li>
-				<li class="item1 ">Yêu cầu nhập mật khẩu</li>
-				<li class="item1 ">Yêu cầu xác nhận mật khẩu</li>
-			</ul>
-		</div>
-	</div>
-	<div class="clear"></div>
-	<div class="footer">
-		<input type="submit" style="float: left;" name="dangKy" value="Đăng ký">
-		<input type="submit" style="float: right;" name="xoaTrang" value="Xóa Trắng">
-	</div>
+	 <form method="post" action="#" name="register">
+			<p>
+		      	<label for="hoVaTen" class="name">Họ và tên(*)</label>
+		     	<input class="text" type="text" name="hoVaTen" id="hoVaTen" />
+		 	</p>
+			<p>
+				<label for="gioiTinh" class="name">Giới tính</label>
+				<input type="radio" name="gioiTinh" value="Nam" checked="true" placeholder=""/>Nam
+				<input type="radio" name="gioiTinh" value="Nu" placeholder=""/>Nữ
+			</p>
+			<p>
+		     	<label for="email" class="name">Email(*)</label>
+		     	<input class="text" type="text" name="email" id="email" />
+		 	</p>
+		 	<p>
+		      	<label for="phone" class="name">Số điện thoại(*)</label>
+		      	<input class="text" type="text" name="phone" id="phone" />
+		  	</p>
+		 	<p>
+		     	<label for="password" class="name">Password(*)</label>
+		     	<input class="text" type="password" name="password" id="password" />
+		 	</p>
+		 	<p>
+		     	<label for="confirm_pass" class="name">Nhập lại password(*)</label>
+		     	<input class="text" type="password" name="confirm_pass" id="confirm_pass" />
+		 	</p>
+			<p>
+		      	<label id="bottom" class="name">submit</label>
+		      	<input type="submit" name="action" id="submit" value="Đăng ký" />
+		      <input type="submit" name="action" id="submit" value="Xóa trắng" />
+		  	</p>
 	</form>
 </body>
 <script type="text/javascript">
-	function load(){
-		var itemcontent = document.getElementsByTagName("form")[0];
-		itemcontent.addEventListener("submit",function(){
-			var hoVaTen = document.getElementById("hoVaTen");
-			var email = document.getElementById("email");
-			var soDienThoai = document.getElementById("soDienThoai");
-			var matKhau = document.getElementById("matKhau");
-			var xnMatKhau = document.getElementById("xnMatKhau");
-			if (itemcontent.hoVaTen.value == "") {
-				hoVaTen.className +="active";
-			}
-			if (itemcontent.email.value == "") {
-				email.className +="active";
-			}
-			if (itemcontent.soDienThoai.value == "") {
-				soDienThoai.className +="active";
-			}
-
-			if (itemcontent.matKhau.value == "") {
-				matKhau.className +="active";
-			}
-
-			if (itemcontent.xnMatKhau.value == itemcontent.matKhau.value) {
-				xnMatKhau.className +="active";
-			}
-
-
-		})
-	}
+  var inputs = document.forms['register'].getElementsByTagName('input');
+  var run_onchange = false;
+  function valid(){
+   var errors = false;
+   var reg_mail = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
+   for(var i=0; i<inputs.length; i++){
+    var value = inputs[i].value;
+    var id = inputs[i].getAttribute('id');
+   
+    // Tạo phần tử span lưu thông tin lỗi
+    var span = document.createElement('span');
+    // Nếu span đã tồn tại thì remove
+    var p = inputs[i].parentNode;
+    if(p.lastChild.nodeName == 'SPAN') {p.removeChild(p.lastChild);}
+   
+    // Kiểm tra rỗng
+    if(value == ''){
+    	span.style.color='red';
+     	span.innerHTML ='Yêu cầu nhập thông tin';
+    }else{
+    // Kiểm tra các trường hợp khác
+     if(id == 'email'){
+      if(reg_mail.test(value) == false){ 
+      	span.style.color='red';
+      	span.innerHTML ='Email không hợp lệ (ví dụ: abc@gmail.com)';
+      }
+      var email =value;
+     }
+     if(id == 'confirm_email' && value != email){
+     	span.style.color='red';
+     	span.innerHTML ='Email nhập lại chưa đúng';
+     }
+     // Kiểm tra password
+     if(id == 'password'){
+      if(value.length <8){
+      	span.style.color='red';
+      	span.innerHTML ='Password phải từ 8 ký tự';
+      }
+      var pass =value;
+     }
+     // Kiểm tra password nhập lại
+     if(id == 'confirm_pass' && value != pass){
+     	span.style.color='red';
+     	span.innerHTML ='Password nhập lại chưa đúng';
+     }
+     // Kiểm tra số điện thoại
+     if(id == 'phone' && isNaN(value) == true){
+     	span.style.color='red';
+     	span.innerHTML ='Số điện thoại phải là kiểu số';
+     }
+    }
+   
+    // Nếu có lỗi thì chèn span vào hồ sơ, chạy onchange, submit return false, highlight border
+    if(span.innerHTML != ''){
+     inputs[i].parentNode.appendChild(span);
+     errors = true;
+     run_onchange = true;
+     inputs[i].style.border = '1px solid #c6807b';
+     inputs[i].style.background = '#fffcf9';
+    }
+   }// end for
+  
+   if(errors == false){alert('Đăng ký thành công');}
+   return !errors;
+  }// end valid()
+ 
+  // Chạy hàm kiểm tra valid()
+  var register = document.getElementById('submit');
+  register.onclick = function(){
+   return valid();
+  }
+ 
+  // Kiểm tra lỗi với sự kiện onchange -> gọi lại hàm valid()
+   for(var i=0; i<inputs.length; i++){
+    var id = inputs[i].getAttribute('id');
+    inputs[i].onchange = function(){
+     if(run_onchange == true){
+      this.style.border = '1px solid #999';
+      this.style.background = '#fff';
+      valid();
+     }
+    }
+   }// end for
 </script>
 </html>
