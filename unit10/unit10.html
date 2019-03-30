@@ -12,11 +12,11 @@
 		function load(){
 			var formDangKy = document.getElementsByTagName("form")[0];
 
-			formDangKy.gioiTinh.value = "Nam"; /*c1*/
-			formDangKy.gioiTinh[1].checked=true;/*c2*/
+			// formDangKy.gioiTinh.value = "Nam"; /*c1*/
+			// formDangKy.gioiTinh[1].checked=true;c2
 
-			formDangKy.khoaHoc.value='Java core';
-			formDangKy.khoaHoc[3].selected=true;
+			// formDangKy.khoaHoc.value='Java core';
+			// formDangKy.khoaHoc[3].selected=true;
 
 			formDangKy.thoiGian[5].checked=true;
 
@@ -25,18 +25,18 @@
 			table.children[0].children[10].style.backgroundColor="orange";
 
 			
-			// formDangKy.addEventListener("submit",function(){
-			// 	var hoVaTen = document.getElementById("hoVaTen");
-			// 	if (formDangKy.hoVaTen.value.strim == "") {
-			// 		alert("Hãy nhập thông tin đầy đủ")
-			// 	}
-			// 	if (formDangKy.gioiTinh.value=="") {
-			// 		alert("Hãy nhập giới tính")
-			// 	}
-			// 	if (formDangKy.moTa.value== "") {
-			// 		alert("Nhập mổ tả")
-			// 	}
-			// });
+			formDangKy.addEventListener("submit",function(){
+				var hoVaTen = document.getElementById("hoVaTen");
+				if (formDangKy.hoVaTen.value== "") {
+					alert("Hãy nhập thông tin đầy đủ")
+				}
+				if (formDangKy.gioiTinh.value=="") {
+					alert("Hãy nhập giới tính")
+				}
+				if (formDangKy.moTa.value== "") {
+					alert("Nhập mổ tả")
+				}
+			});
 		}
 	</script>
 </head>

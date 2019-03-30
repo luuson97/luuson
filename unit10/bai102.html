@@ -8,22 +8,32 @@
 	<link rel="stylesheet" href="font/css/font-awesome.css">
 	<style type="text/css" media="screen">
 
-		div.content{
+		div.content {
 			width: 72%;
-			margin: 100px auto;
+			height: auto;
+			margin: 10px 312px;
+			
+		}
+		.content{
+			border: 1px;
+			border-color: red;
+		}
+		div.footer{
+			width: 15%;
+			margin:10px auto;
 		}
 		.left{
 			margin:3px;
-			width: 20%;	
+			width: %;	
 			float: left;
 		}
 		.center{
-			width: 30%;	
+			width: 25%;	
 			float: left;
 			margin:3px;
 		}
 		.right{
-			width: 20%;	
+			width: 26%;	
 			float: left;
 			margin:3px;
 		}
@@ -32,11 +42,27 @@
 			margin-top: 10px;
 		}
 		.item{
-			margin-top: 20px;
+			margin-top: 10px;
+		}
+		.item1{
+			margin-top: 18px;
+			font-size: none;
+			display: none;
+			color:red;
+		}
+		.active{
+			margin-top: 18px;
+			font-size: none;
+			display: none;
+			color:red;
+			
+		}
+		.clear{
+			clear: both;
 		}
 	</style>
 </head>
-<body>
+<body onload="load()">
 	<div class="content">
 		<div class="left">
 			<ul class="item-content">
@@ -51,36 +77,70 @@
 		<div class="center">
 			<ul class="item-content">
 				<li class="item">
-					<input type="text" name="name" placeholder="Nhập tên">
+					<input id="hoVaTen" type="text" name="name" value="" placeholder="Nhập tên">
 				</li>
 				<li class="item">
-					<input type="radio" name="gioiTinh" value="Nam" placeholder=""/>Nam
-				 	<input type="radio" name="gioiTinh" value="Nu" placeholder=""/>Nữ
+					<input id="gioiTinh" type="radio" name="gioiTinh" value="Nam" placeholder=""/>Nam
+				 	<input id="gioiTinh" type="radio" name="gioiTinh" value="Nu" placeholder=""/>Nữ
 				</li>
 				<li class="item">
-					<input type="text" name="name" placeholder="Nhập tên">
+					<input id="email" type="text" name="name" placeholder="Nhập email">
 				</li>
 				<li class="item">
-					<input type="text" name="name" placeholder="Nhập tên">
+					<input id="soDienThoai" type="text" name="name" placeholder="Nhập số điện thoại">
 				</li>
-				<li class="item">
+				<li id="matKhau" class="item">
 					<input type="password" name="matKhau" value="" placeholder="Nhập mật khẩu"/>
 				</li>
-				<li class="item">
+				<li id="xnMatKhau" class="item">
 					<input type="password" name="matKhau" value="" placeholder="Nhập mật khẩu"/>
 				</li>
 			</ul>
 		</div>
 		<div class="right">
 			<ul class="item-content">
-				<li class="item">Họ và tên</li>
-				<li class="item">Giới tính</li>
-				<li class="item">Email</li>
-				<li class="item">Số điện thoại</li>
-				<li class="item">Mật khẩu</li>
-				<li class="item">Xác nhận mật khẩu</li>
+				<li class="item1 ">Yêu cầu nhập đầy đủ họ tên</li>
+				<li class="item1 ">Yêu cầu chọn giới tính</li>
+				<li class="item1 ">Yêu cầu nhập số điện thoại</li>
+				<li class="item1 ">Yêu cầu nhập mật khẩu</li>
+				<li class="item1 ">Yêu cầu xác nhận mật khẩu</li>
 			</ul>
 		</div>
 	</div>
+	<div class="clear"></div>
+	<div class="footer">
+		<input type="submit" style="float: left;" name="dangKy" value="Đăng ký">
+		<input type="submit" style="float: right;" name="xoaTrang" value="Xóa Trắng">
+	</div>
 </body>
+<script type="text/javascript">
+	function load(){
+		var itemcontent = document.getElementsByName("item")[0];
+		itemcontent.addEventListener("submit",function(){
+			var hoVaTen = document.getElementById("hoVaTen");
+			var email = document.getElementById("email");
+			var soDienThoai = document.getElementById("soDienThoai");
+			var matKhau = document.getElementById("matKhau");
+			var xnMatKhau = document.getElementById("xnMatKhau");
+			if (itemcontent.hoVaTen.value == "") {
+				hoVaTen.className +="active";
+			}
+			if (itemcontent.email.value == "") {
+				email.className +="active";
+			}
+			if (itemcontent.soDienThoai.value == "") {
+				soDienThoai.className +="active";
+			}
+
+			if (itemcontent.matKhau.value == "") {
+				matKhau.className +="active";
+			}
+
+			if (itemcontent.xnMatKhau.value == itemcontent.matKhau.value) {
+				xnMatKhau.className +="active";
+			}
+
+		})
+	}
+</script>
 </html>
