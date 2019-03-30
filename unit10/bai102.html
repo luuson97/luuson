@@ -63,6 +63,7 @@
 	</style>
 </head>
 <body onload="load()">
+	<form name="formDangKy">
 	<div class="content">
 		<div class="left">
 			<ul class="item-content">
@@ -112,10 +113,11 @@
 		<input type="submit" style="float: left;" name="dangKy" value="Đăng ký">
 		<input type="submit" style="float: right;" name="xoaTrang" value="Xóa Trắng">
 	</div>
+	</form>
 </body>
 <script type="text/javascript">
 	function load(){
-		var itemcontent = document.getElementsByName("div")[0];
+		var itemcontent = document.getElementsByTagName("form")[0];
 		itemcontent.addEventListener("submit",function(){
 			var hoVaTen = document.getElementById("hoVaTen");
 			var email = document.getElementById("email");
@@ -139,6 +141,7 @@
 			if (itemcontent.xnMatKhau.value == itemcontent.matKhau.value) {
 				xnMatKhau.className +="active";
 			}
+
 
 		})
 	}
