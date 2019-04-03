@@ -13,6 +13,7 @@
               <button class="tablinks active">tab1</button>
               <button class="tablinks">tab2</button>
               <button class="tablinks">tab3</button>
+              <button class="tablinks">tab4</button>
             </div>
 
             <div id="tab1" class="tabcontent">
@@ -35,6 +36,12 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque molestiae, est recusandae quae harum repellat obcaecati voluptate a mollitia unde nulla dolorem rem quia praesentium expedita molestias, ipsam at aliquid aspernatur accusantium. Doloribus, natus suscipit aliquam voluptas quod dolorem aut provident dicta rem. Quod, eaque enim soluta dolorum doloribus.
                 </p>
             </div>
+            <div id="tab4" class="tabcontent">
+                <h3>tab4</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque molestiae, est recusandae quae harum repellat obcaecati voluptate a mollitia unde nulla dolorem rem quia praesentium expedita molestias, ipsam at aliquid aspernatur accusantium. Doloribus, natus suscipit aliquam voluptas quod dolorem aut provident dicta rem. Quod, eaque enim soluta dolorum doloribus.
+                </p>
+            </div>
         </div>
     </body>
     <script type="text/javascript">
@@ -48,7 +55,8 @@
             content.style.display = 'block';
         }
         for (var i = 0; i < buttons.length; i++) {
-            buttons[i].addEventListener("click", function(){
+            buttons[i].addEventListener("click",
+             function(){
                 var id = this.textContent;
                 for (var i = 0; i < buttons.length; i++) {
                     buttons[i].classList.remove("active");

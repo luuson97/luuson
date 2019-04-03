@@ -3,7 +3,7 @@ $(function(){
 	$('#add').on('click',function(){
 		var input = $('#input').val();
 		
-			if (input !="" && input != " ") {
+			if (input.trim()!= "") {
 				$('#content').append(
 				`<tr>
 					<td class="checkbox"></td>

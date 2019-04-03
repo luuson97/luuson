@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head onload="load()">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ChuaBai01</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/javascript" href="js/bai1.js">
+	<link rel="stylesheet" href="font/css/font-awesome.css">
+</head>
+<body>
+	<div id="slide">
+		<div class="item">
+			<img src="images/img1.gif" alt="">
+			<h1>Lorem ipsum dolor sit amet 1</h1>
+			<span class="dot"></span>
+		</div>
+		<div class="item active">
+			<img src="images/img2.gif" alt="">
+			<h1>Lorem ipsum dolor sit amet 2</h1>
+			<span class="dot"></span>
+		</div>
+		<div class="item">
+			<img src="images/img3.gif" alt="">
+			<h1>Lorem ipsum dolor sit amet 3</h1>
+			<span class="dot"></span>
+		</div>
+		<div class="item">
+			<img src="images/img4.gif" alt="">
+			<h1>Lorem ipsum dolor sit amet 4</h1>
+			<span class="dot"></span>
+		</div>
+		<span id="back" class="fa fa-arrow-left"></span>
+		<span id="next" class="fa fa-arrow-right"></span>
+	</div>
+</body>
+<script type="text/javascript">
+	function nextImage(){
+		var active = document.getElementsByClassName("active")[0];
+		active.className="item";
+		if (active.nextElementSibling.className.indexOf("item")>=0)
+			active.nextElementSibling.className="item active";
+		else active.parentNode.firstElementChild.className= "item active";
+	}
+	function backImage(){
+		var active = document.getElementsByClassName("active")[0];
+		active.className="item";
+		console.log(active.previousElementSibling);
+		if (active.previousElementSibling==null)
+			active.parentNode.children[count-3].className= "item active";
+		else active.previousElementSibling.className="item active";
+	}
+	function dotClick(item){
+		var active = document.getElementsByClassName("active")[0];
+		active.className="item";
+		item.parentNode.className="item active";
+	}
+	function load(){
+		var dots = document.getElementsByClassName("dot");
+		dots[0].style.left="400px";
+		var left=400;
+		for (var i = 1; i < dots.length; i++) {
+			dots[i].style.left=400+i*40+"px";
+		}
+		var back = document.getElementById("back");
+		var next = document.getElementById("next");
+		next.addEventListener("click",function(){
+			nextImage();
+		});
+		back.addEventListener("click",function(){
+			backImage();
+		});
+		for (var i = 0; i < dots.length; i++) {
+			dots[i].addEventListener("click",function(){
+				dotClick(this);
+			});
+		}
+		setInterval(function(){
+			nextImage();
+		},1000);
+
+	}
+</script>
+</html>
