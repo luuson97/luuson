@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unit12</title>
+	<style type="text/css" media="screen">
+		
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/baitap.css">
+	<script type="text/javascript">
+		function init(){
+			var tabs = document.getElementsByTagName("h3");
+			for (var i = 0; i < tabs.length; i++) {
+				tabs[i].addEventListener("click",function(){
+					var active = document.getElementsByClassName("active")[0];
+					active.className="tab";
+					this.parentNode.className="active tab";
+				});
+			}
+		}
+	</script>
+</head>
+<body onload="init()">
+	<div id="tabs">
+		<div class="active tab">
+			<h3>1. Account</h3>
+			<div>
+				
+			    <fieldset>
+			        <legend style="padding-bottom: 15px;">Account Information</legend>
+			        <label for="userName-2">User name *</label>
+			        <input id="userName-2" name="userName" type="text" class="required">
+			        <label for="password-2">Password *</label>
+			        <input id="password-2" name="password" type="text" class="required">
+			        <label for="confirm-2">Confirm Password *</label>
+			        <input id="confirm-2" name="confirm" type="text" class="required">
+			        <span>(*) Mandatory</span>
+			    </fieldset>
+			</div>
+		</div>
+		<div class="tab">
+			 <h3>2. Profile</h3>
+			<div>
+				
+			    <fieldset>
+			        <legend  style="padding-bottom: 15px;">Profile Information</legend>
+			 
+			        <label for="name-2">First name *</label>
+			        <input id="name-2" name="name" type="text" class="required">
+			        <label for="surname-2">Last name *</label>
+			        <input id="surname-2" name="surname" type="text" class="required">
+			        <label for="email-2">Email *</label>
+			        <input id="email-2" name="email" type="text" class="required email">
+			        <label for="address-2">Address</label>
+			        <input id="address-2" name="address" type="text">
+			        <label for="age-2">Age (The warning step will show up if age is less than 18) *</label>
+			        <input id="age-2" name="age" type="text" class="required number">
+			        <span>(*) Mandatory</span>
+			    </fieldset>
+			</div>
+		</div>
+		<div class="tab">
+			<h3>3. Warning</h3>
+			<div>
+				
+			    <fieldset>
+			        <legend>You are to young</legend>
+			 
+			        <span>Please go away ;-)</span>
+			    </fieldset>
+			</div>
+		</div>
+		<div class="tab">
+			<h3>4. Finish</h3>
+			<div>
+				 
+			    <fieldset>
+			        <legend>Terms and Conditions</legend>
+			 
+			        <input id="acceptTerms-2" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
+			    </fieldset>
+			</div>
+		</div>
+		<!-- <div class="tab">
+			<p>5. Finish</p>
+			<div>
+				Ha Noi Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa dolor doloribus ab, vero repudiandae porro et fugit nisi dolorum vel accusantium ullam, recusandae cumque maiores aliquam. In, at eaque qui eum ex autem animi laborum repudiandae iusto nisi provident.
+			</div>
+		</div> -->
+	</div>
+	<div style="clear: both;">
+		
+	</div>
+	<div class="button">
+		<ul>
+			<li><input type="button" name="next" value="Next"></button></li>
+			<li><input type="button" name="pr" value="Previus"></button></li>	
+		</ul>
+	</div>
+</body>
+<script type="text/javascript">
+  var inputs = document.forms['register'].getElementsByTagName('input');
+  var run_onchange = false;
+  function valid(){
+   var errors = false;
+   for(var i=0; i<inputs.length; i++){
+    var value = inputs[i].value;
+    var id = inputs[i].getAttribute('id');
+    var span = document.createElement('span');
+    var p = inputs[i].parentNode;
+  	  span.style.color='red';
+    if(p.lastChild.nodeName == 'SPAN') {p.removeChild(p.lastChild);}
+    if(value == ''){
+     	span.innerHTML ='Yêu cầu nhập thông tin';
+    }else{}
+}
+}
+
+</script>
+</html>

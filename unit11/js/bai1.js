@@ -22,6 +22,7 @@ $(function(){
 		var check = $(this).children('.checkbox').html()
 		if (check =="") {
 			$(this).children('.checkbox').append(`<i class="fa fa-check" aria-hidden="true"></i>`)
+			$('#input').css("text-decoration","line-through");
 		}
 		else{
 			$(this).children('.checkbox').text('')
