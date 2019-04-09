@@ -6,6 +6,7 @@
 		
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/baitap.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript">
 		function init(){
 			var tabs = document.getElementsByTagName("h3");
@@ -80,13 +81,6 @@
 			    </fieldset>
 			</div>
 		</div>
-		<!-- <div class="tab">
-			<p>5. Finish</p>
-			<div>
-				Ha Noi Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa dolor doloribus ab, vero repudiandae porro et fugit nisi dolorum vel accusantium ullam, recusandae cumque maiores aliquam. In, at eaque qui eum ex autem animi laborum repudiandae iusto nisi provident.
-			</div>
-		</div> -->
 	</div>
 	<div style="clear: both;">
 		
@@ -112,7 +106,25 @@
     if(p.lastChild.nodeName == 'SPAN') {p.removeChild(p.lastChild);}
     if(value == ''){
      	span.innerHTML ='Yêu cầu nhập thông tin';
-    }else{}
+    }else{
+    if(id == 'password'){
+      if(value.length <8){
+      	span.innerHTML ='Password phải từ 8 ký tự';
+      }
+      var pass =value;
+     }
+     // Kiểm tra password nhập lại
+     if(id == 'confirm_pass' && value != pass){
+     	span.innerHTML ='Password nhập lại chưa đúng';
+     }
+	}
+	 if(span.innerHTML != ''){
+     inputs[i].parentNode.appendChild(span);
+     errors = true;
+     run_onchange = true;
+     inputs[i].style.border = '1px solid #c6807b';
+     inputs[i].style.background = '#fffcf9';
+    }
 }
 }
 

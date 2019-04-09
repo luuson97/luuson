@@ -28,7 +28,7 @@
 	position: absolute;
 	top: 60px;
 	left: 8px;
-	height: 200px;
+	height: 300px;
 	width: 60%;
 	display: none;
 	/*border:1px solid black;*/
@@ -44,7 +44,7 @@
 }
 .button{
 	width: 60%;
-	padding-top: 250px;
+	padding-top: 320px;
 	display: inline-block;
 
 
