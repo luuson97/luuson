@@ -52,10 +52,23 @@
 	width: 50px;
 	color:#F05F40;
 }
+.row{
+	padding-right: 0px;
+	padding-left: 0px;
+}
 .row .card{
 	text-align: center;
 	color: black;
 }
 .row .card i{
 	color: #F05F40;
+}
+.row div{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.row .hr{
+	height: 4px;
+	width: 50px;
+	color:#F05F40;
 }
