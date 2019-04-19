@@ -584,6 +584,9 @@
 /**/
 /*=====================ABOUT US============?*/
 .demo{ background: #f0e0d4; }
+.demo .card-deck{
+	opacity: 0.2;
+}
 .our-team1{
     text-align: center;
     position: relative;
@@ -1137,6 +1140,26 @@ textarea.form-control {
 	padding-top: 40px;
 	padding-bottom: 20px;
 }
+@media (max-width:768px) {
+	.ct-ft img{
+		width: 70%;
+		height: auto;
+	}
+}
+
+
+
+@media (max-width:580px) {
+	.ct-ft img{
+		width: 10%;
+		height: auto;
+		padding-top: 60px;
+	}
+}
+
+
+
+
 
 
 @media (min-width:769px) and (max-width:991px) {
@@ -1167,6 +1190,7 @@ textarea.form-control {
 	.button_class span{
 		font-size: 15px;
 	}
+}
 @media (max-width:480px) {
 	.button_class p{
 		font-size: 17px;
