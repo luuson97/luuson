@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="ligthbox/css/lightbox.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="css/baitap.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<!-- <script src="js/baitap.js"></script> -->
+	<script src="wow/wow.js">	
+	</script>
+	<script type="text/javascript"> 	
+	</script>
+	<script>
+		new WOW().init();
+	</script>
+	<style type="text/css" media="screen">
+h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+.butt {
+  font: 400 1.4rem 'Lato', Verdana, Helvetica, sans-serif;
+}
+.btn-change{
+    height: 50px;
+    width: 100px;
+    background: lightseagreen;
+    margin: 20px;
+    float: left;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    border: 0px;
+    color: #fff;
+}
+.btn-change:hover{
+    -webkit-transform: scale(1.1);
+    background: #31708f;
+}
+.btn-change7{
+    height: 50px;
+    width: 200px;
+    background: lightseagreen;
+    margin: 20px;
+    float: left;
+    border:0px;
+    color:#fff;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    box-shadow:0px 0 0 #31708f  inset;
+}
+.btn-change7:hover{
+    box-shadow:200px 0 0 #31708f inset;
+}
+.btn-change8{
+    height: 50px;
+    width: 200px;
+    background: lightseagreen;
+    margin: 20px;
+    float: left;
+    border:0px;
+    color:#fff;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    box-shadow:0px 0 0 #31708f  inset;
+}
+.btn-change8:hover{
+    -webkit-box-shadow: -200px 0 0 #31708f inset;
+}
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+
+.post-slide8{
+    margin: 0 15px;
+    position:relative;
+    background:#fff;
+    box-shadow: 0 1px 2px rgba(43,59,93,0.30);
+    margin-bottom:2em;
+}
+.post-slide8 .post-img{
+    position: relative;
+    overflow: hidden;
+}
+.post-slide8 .post-img img{
+    width: 100%;
+    height: auto;
+}
+.post-slide8 .over-layer{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    background: rgba(0,0,0,0.6);
+    transition: all 0.30s ease;
+}
+.post-slide8:hover .over-layer{
+    opacity:1;
+}
+.post-slide8 .post-link{
+    margin:0;
+    padding:0;
+    position: relative;
+    top:45%;
+    text-align:center;
+}
+.post-slide8 .post-link li{
+    display: inline-block;
+    list-style: none;
+    margin-right:20px;
+}
+.post-slide8 .post-link li a{
+    color:#fff;
+    font-size:20px;
+}
+.post-slide8 .post-link li a:hover{
+    color: #ff8b3d;
+    text-decoration:none;
+}
+.post-slide8 .post-date{
+    position:absolute;
+    top:10%;
+    left:4%;
+}
+.post-slide8 .date{
+    display: inline-block;
+    border-radius: 3px 0 0 3px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background:#333;
+    float: left;
+}
+.post-slide8 .month{
+    display: inline-block;
+    border-radius: 0 3px 3px 0;
+    padding: 5px 13px;
+    color: #111;
+    font-size: 20px;
+    font-weight: bold;
+    background: #ff8b3d;
+}
+.post-slide8 .post-content{
+    padding:30px;
+}
+.post-slide8 .post-title{
+    margin:0 0 15px 0;
+}
+.post-slide8 .post-title a{
+    font-size:18px;
+    font-weight:bold;
+    color:#333;
+    display: inline-block;
+    text-transform:capitalize;
+    transition: all 0.3s ease 0s;
+}
+.post-slide8 .post-title a:hover{
+    text-decoration: none;
+    color:#ff8b3d;
+}
+.post-slide8 .post-description{
+    font-size: 14px;
+    line-height:24px;
+    color:#808080;
+}
+.post-slide8 .read-more{
+    color:#333;
+    font-size:14px;
+    font-weight:bold;
+    text-transform:uppercase;
+    position: relative;
+    transition: color 0.20s linear;
+}
+.post-slide8 .read-more:hover{
+    text-decoration:none;
+    color:#ff8b3d;
+}
+.post-slide8 .read-more:after{
+    content:"";
+    position: absolute;
+    width:30%;
+    display: block;
+    border:1px solid #ff8b3d;
+    transition: all 0.30s ease;
+}
+.post-slide8 .read-more:hover:after{
+    width:100%;
+}
+@media only screen and (max-width: 479px) {
+    .post-slide8 .month{
+        font-size:14px;
+    }
+    .post-slide8 .date{
+        font-size:14px;
+    }
+}
+
+
+
+
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #e84a64;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+	</style>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+
+
+<div class="container">
+
+   <section class="customer-logos slider">
+      <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+      <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+   </section>
+   <!-- ================? -->
+
+<div class="butt">
+	<div class="row">
+        <button class="btn-change7">LEAR MORE</button>
+        <button class="btn-change8">OUR FOLIO</button>
+	</div>
+</div>
+</div>
+
+
+
+
+
+<div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Gallery</h1>
+        </div>
+
+        <div align="center" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+             <button class="btn btn-default filter-button" data-filter="all">All</button> 
+            <button class="btn btn-default filter-button" data-filter="hdpe">Virtual Reality</button>
+            
+            <button class="btn btn-default filter-button" data-filter="spray">Video Tutorials</button>
+            <button class="btn btn-default filter-button" data-filter="irrigation">Customised For You</button>
+        </div>
+        <br/>
+
+		<div style="clear: both;">
+			
+		</div>
+
+            <div class="wow jackInTheBox gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                <!-- <img src="http://fakeimg.pl/365x365/" class="img-responsive"> -->
+                <img src="https://vrook.co/img/vr2.png" class="img-responsive">
+               
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                <img src="https://vrook.co/img/vr.png" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                 <img src="https://vrook.co/img/vr5.png" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                 <img src="https://vrook.co/img/vr3.png" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter hdpe">
+                 <img src="https://vrook.co/img/vr3.png" class="img-responsive">
+            </div>
+            
+            
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter spray">
+                 <img src="https://vrook.co/img/vt.png" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter spray">
+                <img src="https://vrook.co/img/vt1.png" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter spray">
+                 <img src="https://vrook.co/img/vt2.png" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter spray">
+                 <img src="https://vrook.co/img/vt3.png" class="img-responsive">
+            </div>
+            
+            
+            
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter irrigation">
+                 <img src="https://vrook.co/img/Syllabus.png" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter irrigation">
+                <img src="https://vrook.co/img/custmise1.png" class="img-responsive">
+               
+            </div>
+
+            <div class="gallery_product col-lg-3 col-md-3 col-sm-3 col-xs-6 filter irrigation">
+                <img src="https://vrook.co/img/custmise2.png" class="img-responsive">
+            </div>
+
+            
+        </div>
+        <div class="container">
+        <h3 class="h3">New slider Demo - 8</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="news-slider8" class="owl-carousel">
+                    <div class="post-slide8">
+                        <div class="post-img">
+                            <img src="http://bestjquery.com/tutorial/news-slider/demo24/images/img-1.jpg" alt="">
+                            <div class="over-layer">
+                                <ul class="post-link">
+                                    <li><a href="#" class="fa fa-search"></a></li>
+                                    <li><a href="#" class="fa fa-link"></a></li>
+                                </ul>
+                            </div>
+                            <div class="post-date">
+                                <span class="date">3</span>
+                                <span class="month">Mar</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Latest News Post</a>
+                            </h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+     
+                    <div class="post-slide8">
+                        <div class="post-img">
+                            <img src="http://bestjquery.com/tutorial/news-slider/demo24/images/img-2.jpg" alt="">
+                            <div class="over-layer">
+                                <ul class="post-link">
+                                    <li><a href="#" class="fa fa-search"></a></li>
+                                    <li><a href="#" class="fa fa-link"></a></li>
+                                </ul>
+                            </div>
+                            <div class="post-date">
+                                <span class="date">5</span>
+                                <span class="month">Mar</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Latest News Post</a>
+                            </h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+                    
+                    <div class="post-slide8">
+                        <div class="post-img">
+                            <img src="http://bestjquery.com/tutorial/news-slider/demo24/images/img-3.jpg" alt="">
+                            <div class="over-layer">
+                                <ul class="post-link">
+                                    <li><a href="#" class="fa fa-search"></a></li>
+                                    <li><a href="#" class="fa fa-link"></a></li>
+                                </ul>
+                            </div>
+                            <div class="post-date">
+                                <span class="date">5</span>
+                                <span class="month">Mar</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Latest News Post</a>
+                            </h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+                    
+                    <div class="post-slide8">
+                        <div class="post-img">
+                            <img src="http://bestjquery.com/tutorial/news-slider/demo24/images/img-4.jpg" alt="">
+                            <div class="over-layer">
+                                <ul class="post-link">
+                                    <li><a href="#" class="fa fa-search"></a></li>
+                                    <li><a href="#" class="fa fa-link"></a></li>
+                                </ul>
+                            </div>
+                            <div class="post-date">
+                                <span class="date">5</span>
+                                <span class="month">Mar</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Latest News Post</a>
+                            </h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+ </div>
+
+
+
+
+
+ <!-- ============== -->
+ <section id="carousel">    				
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+				<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+				  <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+				    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+				    <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner">
+				    <div class="active item">
+				    	<blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    	</blockquote>
+				    	<div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+				    </div>
+				    <div class="item">
+				    	<blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    	</blockquote>
+				    	<div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+				    </div>
+				    <div class="item">
+				    	<blockquote>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+				    	</blockquote>
+				    	<div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
+				    </div>
+				  </div>
+				</div>
+			</div>							
+		</div>
+	</div>
+</section>
+
+<script>
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+ $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+
+
+ $(document).ready(function() {
+ 	 $("#news-slider8").owlCarousel({
+        items : 3,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[980,2],
+        itemsMobile : [600,1],
+        autoPlay:true
+    });
+ 	 });
+
+</script>
+
+
+
+</body>
+</html>

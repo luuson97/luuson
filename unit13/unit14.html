@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+		function randomNumber(){
+			return Math.floor(Math.random()*256);
+		}
+		$(function(){
+			$(".rec").each(function(){
+				var red = randomNumber();
+				var green = randomNumber();
+				var blue = randomNumber();
+				$(this).css("background-color",'rgb('+red+','+green+','+blue+')');
+				$(this).addClass("group"+Math.floor(Math.random()*4));
+
+			});
+			$("button").Click(function(){
+				new WOW().init();
+				var group = $(this).attr("filter");
+				if (group=='all'){
+					$(".rec").hide()
+					$(".rec").hide();
+				}
+				else{
+					$(".rec").hide();
+					var clazz = '.'+group;
+					$(clazz).show
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

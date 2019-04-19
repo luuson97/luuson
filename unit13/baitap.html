@@ -4,189 +4,922 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>bootstrap</title>
+
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
 	<link rel="stylesheet" href="css/baitap.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+	
+
+	<script src="wow/wow.js">	
+	</script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<style type="text/css" media="screen">
-		ul li{
-			list-style: none;
-		}
-	</style> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+	
+	<script src="js/baitap.js"></script>
+	<script type="text/javascript"> 	
+	</script>
+	<script>
+		new WOW().init();
+	</script>
 
 </head>
 <!-- container container-fluit row col- ofset img-fluit float-left-right table  table stiped-->
-<body>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header" style="padding-left: 100px;">
-				<a class="navbar-brand" href="#">START BOOTSTAP</a>
-			</div>
-			<ul class="nav navbar-nav navbar-right" style="padding-right: 100px;">
-				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Page 1-1</a></li>
-						<li><a href="#">Page 1-2</a></li>
-						<li><a href="#">Page 1-3</a></li>
-					</ul>
+
+
+
+<body >
+
+	
+
+
+	<nav class="header1 navbar navbar-expand-lg navbar-light bg-light ">
+		<a class="navbar-brand" href="#"style="padding-left: 60px;"> <img src="images/logo.png" alt=""> </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active" >
+					<a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
 				</li>
-				<li><a href="#">SERVICES</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span> PORTFOUD</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> CONTACT</a></li>
+
 			</ul>
+			<span class="navbar-text" style="padding-right: 50px;">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">FOLIO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">FEATURES</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">WHYUS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">TESTIMONAILS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">CONTACT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="#"><i class="fa fa-shopping-cart"></i></a>
+					</li>
+				</ul>
+			</span>
 		</div>
 	</nav>
-	<div class="content card text-center" style="background-image: url(images/4.jpg);">
-		<div class="card-header">
-			<h1>YOUR FAVORITE SOURCE OF FREE BOOTSTAP THEMES</h1>
+
+
+	<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-2" data-slide-to="1"></li>
+			<li data-target="#carousel-example-2" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div class="view">
+
+					<img class="d-block w-100" src="images/1 (1).jpg"
+					alt="First slide">
+					<div class="mask rgba-black-light"></div>
+				</div>
+				<div class="bt carousel-caption">
+					<h3 class="h3-responsive">DESIGN & BUILD</h3>
+					<div class="butt">
+						<button class="btn-change7">LEAR MORE</button>
+						<button class="btn-change8">OUR FOLIO</button>
+					</div>
+					<p>First text</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="view">
+					<img class="d-block w-100" src="images/2 (1).jpg"
+					alt="Second slide">
+					<div class="mask rgba-black-strong"></div>
+				</div>
+				<div class="bt carousel-caption">
+					<h3 class="h3-responsive">DESIGN & BUILD</h3>
+					<div class="butt">
+						<button class="btn-change7">LEAR MORE</button>
+						<button class="btn-change8">OUR FOLIO</button>
+					</div>
+					<p>First text</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="view">
+					<img class="d-block w-100" src="images/3 (1).jpg"
+					alt="Third slide">
+					<div class="mask rgba-black-slight"></div>
+				</div>
+				<div class="bt carousel-caption">
+					<h3 class="h3-responsive">DESIGN & BUILD</h3>
+					<div class="butt">
+						<button class="btn-change7">LEAR MORE</button>
+						<button class="btn-change8">OUR FOLIO</button>
+					</div>
+					<p>First text</p>
+				</div>
+			</div>
 		</div>
-		<div class="card-body">
-			<hr width="50px" color="red" >
-			<h5 class="card-title">Special title treatment Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h5>
-			<p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet.</p>
-			<a href="#" class="btn btn-primary">Go somewhere</a>
-		</div>
-		<div class="card-footer text-muted">
-			
-		</div>
+		<a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
-	<div class="card text-center" style="background-color: #F05F30;">
-		<div class="card-header">
-			<h1>We've got what you need</h1>
-		</div>
-		<div class="card-body">
-			<hr width="50px" color="red">
-			<h5 class="card-title">Special title treatment Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h5>
-			<p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet.</p>
-			<p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor.</p>
-			<a href="#" class="btn btn-primary" style="background-color: white;"><p style="color: black;">Go somewhere</p></a>
-		</div>
-		<div class="card-footer text-muted" style="padding-bottom: 80px;">
-			
-		</div>
-	</div>
-	<div class="container" style="padding-top: 50px;">
-		<div class="ct" >
-			<h3>At Your Service</h3>
-			<hr size="100px" width="100px" color="orange">
-		</div>
-		<div class="row" style="padding-bottom: 50px;">
-			<div class="color red col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-				<div class="card" >
-					<i class="fa fa-diamond fa-5x" aria-hidden="true"></i>
+
+
+
+
+
+	<div class="container" style="padding-bottom: 50px;">
+		<div class="card text-center" >
+			<div class="card-header name-content">
+				<h2>CONSTRUCTION</h2>
+				<hr >
+			</div>
+			<div class="rit card-body" >
+
+				<h5 class="card-title">Special title treatment Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h5>
+				<p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet.With supporting text below as a natural lead-in to additional content.</p>
+			</div>
+		</div>	
+		<div class="row card-deck">
+			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+				<div class="card ">
+					<img src="images/1 (2).jpg" class="card-img-top" alt="...">
 					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h5 class="card-title">Contruction Consultant</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
 					</div>
 				</div>
 			</div>
-			<div class="color blue col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-				<div class="card" >
-					<i class="fa fa-paper-plane fa-5x" aria-hidden="true"></i>
+			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+				<div class="card ">
+					<img src="images/2 (2).jpg" class="card-img-top" alt="...">
 					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h5 class="card-title">Contruction Consultant</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
 					</div>
 				</div>
 			</div>
-			<div class="color green col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-				<div class="card" >
-					<i class="fa fa-newspaper-o fa-5x" aria-hidden="true"></i>
+			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12" style="padding-bottom: 20px;">
+				<div class="card ">
+					<img src="images/3 (2).jpg" class="card-img-top" alt="...">
 					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h5 class="card-title">Contruction Consultant</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
 					</div>
 				</div>
 			</div>
-			<div class="color green col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-				<div class="card" >
-					<i class="fa fa-heart fa-5x" aria-hidden="true"></i>
-					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					</div>
-				</div>
-			</div>
+
 		</div>
 	</div>
 
-	<div class="row" >
-		<div class="img col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-			<img src="images/1.jpg" alt="">
+	<div class="ctn1 container-fluit" >
+		<div class="card text-center" >
+			<div class="card-header name-content" style="border-width: 0px; ">
+				<h2>ABUOT US</h2>
+				<hr >
+				<h5 class="card-title">Special title treatment Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h5>
+				<p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet.With supporting text below as a natural lead-in to additional content.</p>
+			</div>
+			
+			
+		</div>	
+		<div class="container">
+			<img src="images/about.jpg" alt="">
 		</div>
-		<div class="img col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-			<img src="images/2.jpg" alt="">
+		<div class="ctn2" style="background-image: url('images/bg-section-facts.jpg');">
+
+			
+			<div class="row text-center">
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+					<div class="counter">
+						<i class="fa fa-code fa-2x"></i>
+						<h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+						<p class="count-text ">Our Customer</p>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+					<div class="counter">
+						<i class="fa fa-coffee fa-2x"></i>
+						<h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+						<p class="count-text ">Happy Clients</p>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+					<div class="counter">
+						<i class="fa fa-lightbulb-o fa-2x"></i>
+						<h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+						<p class="count-text ">Project Complete</p>
+					</div></div>
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+						<div class="counter">
+							<i class="fa fa-bug fa-2x"></i>
+							<h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+							<p class="count-text ">Coffee With Clients</p>
+						</div>
+					</div>
+				</div>
+				
+
+			</div>
 		</div>
-		<div class="img col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-			<img src="images/3.jpg" alt="">
+
+		<div class="ctn3 container-fluit">
+			<div class="card text-center " >
+				<div class="card-header name-content">
+					<h2>RECENT WORKS</h2>
+					<hr >
+				</div>
+				<div class="rit card-body" >
+
+					<h5 class="card-title">Special title treatment Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h5>
+					<p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet.With supporting text below as a natural lead-in to additional content.</p>
+				</div>
+			</div>	
+
+
+
+			<!-- =========== -->
+
+			
+			<!-- ================== -->
+			<div class="container-fluid">
+				<div class="row" style="padding-bottom: 40px;">
+					
+
+					<div align="center" class="ctn-rc col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<button class="btn btn-default filter-button" data-filter="all">All</button> 
+						<button class="btn btn-default filter-button" data-filter="hdpe">Virtual Reality</button>
+
+						<button class="btn btn-default filter-button" data-filter="spray">Video Tutorials</button>
+						<button class="btn btn-default filter-button" data-filter="irrigation">Customised For You</button>
+					</div>
+					<br/>
+
+					<div style="clear: both;">
+
+					</div >
+
+
+					<div class="wow fadeOutRightBig col-md-3 col-sm-6 col-xs-12 single_portfolio_text filter hdpe">
+						<img src="images/1 (3).jpg" alt="" />
+						<div class="portfolio_images_overlay text-center">
+							<h6 class="clrd-font">Italian Home Say</h6>
+							<p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12000</p>
+							<a href="#" class="btn btn-primary">Click here</a>
+						</div>
+						<a class="fancybox" rel="ligthbox" href="images/1 (3).jpg">
+							<div class="zoom"></div>
+						</a>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 single_portfolio_text filter hdpe">
+						<img src="images/2 (3).jpg" alt="" />
+						<div class="portfolio_images_overlay text-center">
+							<h6 class="clrd-font">My Home & Buidings</h6>
+							<p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12433100</p>
+							<a href="#" class="btn btn-primary">Click here</a>
+						</div>
+						<a class="fancybox" rel="ligthbox" href="images/2 (3).jpg">
+							<div class="zoom"></div>
+						</a>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 single_portfolio_text filter hdpe">
+						<img src="images/3 (3).jpg" alt="" />
+						<div class="portfolio_images_overlay text-center">
+							<h6 class="clrd-font">My Home & Buidings</h6>
+							<p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 124564500</p>
+							<a href="#" class="btn btn-primary">Click here</a>
+						</div>
+						<a class="fancybox" rel="ligthbox" href="images/3 (3).jpg">
+							<div class="zoom"></div>
+						</a>
+					</div>
+
+
+
+
+
+					<div class="col-md-3 col-sm-6 col-xs-12 single_portfolio_text filter spray">
+						<img src="images/1 (1).jpg" alt="" />
+						<div class="portfolio_images_overlay text-center">
+							<h6 class="clrd-font">My Home & Buidings</h6>
+							<p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 1212000</p>
+							<a href="#" class="btn btn-primary">Click here</a>
+						</div>
+						<a class="fancybox" rel="ligthbox" href="images/1 (1).jpg">
+							<div class="zoom"></div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 single_portfolio_text filter spray">
+						<img src="images/5.jpg" alt="" />
+						<div class="portfolio_images_overlay text-center">
+							<h6 class="clrd-font">My Home & Buidings</h6>
+							<p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 1224200</p>
+							<a href="#" class="btn btn-primary">Click here</a>
+						</div>
+						<a class="fancybox" rel="ligthbox" href="images/5.jpg">
+							<div class="zoom"></div>
+						</a>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 single_portfolio_text filter spray">
+						<img src="images/6.jpg" alt="" />
+						<div class="portfolio_images_overlay text-center">
+							<h6 class="clrd-font">My Home & Buidings</h6>
+							<p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12424100</p>
+							<a href="#" class="btn btn-primary">Click here</a>
+						</div>
+						<a class="fancybox" rel="ligthbox" href="images/6.jpg">
+							<div class="zoom"></div>
+						</a>
+					</div>
+
+
+
+
+
+
+					<div class="col-md-3 col-sm-6 col-xs-12 single_portfolio_text filter irrigation">
+						<img src="images/7.jpg" alt="" />
+						<div class="portfolio_images_overlay text-center">
+							<h6 class="clrd-font">My Home & Buidings</h6>
+							<p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 1212012400</p>
+							<a href="#" class="btn btn-primary">Click here</a>
+						</div>
+						<a class="fancybox" rel="ligthbox" href="images/7.jpg">
+							<div class="zoom"></div>
+						</a>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 single_portfolio_text filter irrigation">
+						<img src="images/8.jpg" alt="" />
+						<div class="portfolio_images_overlay text-center">
+							<h6 class="clrd-font">My Home & Buidings</h6>
+							<p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 125124000</p>
+							<a href="#" class="btn btn-primary">Click here</a>
+						</div>
+						<a class="fancybox" rel="ligthbox" href="images/8.jpg">
+							<div class="zoom"></div>
+						</a>
+					</div>
+
+
+
+				</div>
+			</div>
+
+
+
 		</div>
-		<div class="img col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-			<img src="images/4.jpg" alt="">
-		</div>
-		<div class="img col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-			<img src="images/5.jpg" alt="">
-		</div>
-		<div class="img col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-			<img src="images/6.jpg" alt="">
-		</div>
-	</div>
-	<div class="card text-center" style="background-color: #212529;">
-		<div class="card-header">
-			<h2>Free Download at Start Bootstrap!</h2>
-		</div>
-		<div class="card-body">
-			<a href="#" class="btn btn-primary">Go somewhere</a>
-		</div>
-		<div class="card-footer text-muted" style="padding-bottom: 50px;">
+		<!-- ========== -->
 		
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="card text-center">
-					<div class="card-header">
-						<h3>Let's Get In Touch!</h3>
-					</div>
-					<div class="card-body">
-						<hr class="hr" size="100px" width="100px" color="orange">
-						<h5 class="card-title">Special title treatment Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h5>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						
-					</div>
-					<div class="card-footer text-muted" >
-					</div>
-				</div>
+		<div class="card text-center" >
+			<div class="card-header name-content">
+				<h2>WHAT WE OFFER</h2>
+				<hr >
 			</div>
-			<div class=" col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-				<div class="card text-center">
-					<div class="card-header">
-						<i class="fa fa-phone fa-5x" aria-hidden="true"></i>
-					</div>
-					<div class="card-body">
-						
-						<p>123-456-789</p>
-					</div>
-					<div class="card-footer text-muted" style="padding-bottom: 50px;">
-						
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-				<div class="card text-center" >
-					<div class="card-header">
-						<i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
-					</div>
-					<div style="color: red;">
-						<p>feedback@gmail.com</p>
-					</div>
-					<div class="card-footer text-muted" style="padding-bottom: 50px;">
-						
-					</div>
-				</div>
+			<div class="rit card-body container" >
+
+				<h5 class="card-title">Special title treatment Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h5>
+				<p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet.With supporting text below as a natural lead-in to additional content.</p>
 			</div>
 		</div>
-	</div>
-</body>
-</html>
+		<div class="container" >
+			<div class="row card-deck ct-icon">
+				<div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="card ">
+						<div class="card text-center" >
+							<div class="card-header name-content">
+								<i class="fas fa-hard-hat fa-4x" aria-hidden="true"></i>
+							</div>
+							<div class="card-body" >
+								<p class="card-text">CONSTRUCTION</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="card ">
+						<div class="card text-center" >
+							<div class="card-header name-content">
+								<i class="fas fa-paint-roller fa-4x"></i>
+							</div>
+							<div class="card-body" >
+								<p class="card-text">RENOVATION</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="card ">
+						<div class="card text-center" >
+							<div class="card-header name-content">
+								<i class="fas fa-ruler-combined fa-4x" aria-hidden="true"></i>
+							</div>
+							<div class="card-body" >
+								<p class="card-text">CONSUBLTING</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="card ">
+						<div class="card text-center" >
+							<div class="card-header name-content">
+								<i class="fas fa-tools fa-4x" aria-hidden="true"></i>
+							</div>
+							<div class="card-body" >
+								<p class="card-text">CONSTRUCT</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="card ">
+						<div class="card text-center" >
+							<div class="card-header name-content">
+								<i class="fas fa-pencil-ruler fa-4x" aria-hidden="true"></i>
+							</div>
+							<div class="card-body" >
+								<p class="card-text">ARCHITECTURE</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="card ">
+						<div class="card text-center" >
+							<div class="card-header name-content">
+								<i class="fas fa-lightbulb-o fa-4x" aria-hidden="true"></i>
+							</div>
+							<div class="card-body" >
+								<p class="card-text">ELECCTRICAL</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+				
+
+
+			</div>
+		</div>
+		<div class="container">
+			<div class="row ">
+				<div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="row">
+						<div class="list-unstyled col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="card mb-3" style="max-width: 540px;">
+								<div class="row no-gutters">
+									<div class="ic_ct1 col-xl-4 col-lg-3 col-md-3 col-sm-3 col-3">
+										<i class="fas fa-drafting-compass fa-3x" aria-hidden="true"></i>
+									</div>
+									<div class="ic_ct2 col-xl-8 col-lg-9 col-md-9 col-sm-9 col-9">
+										<div class="card-body">
+											<h5 class="card-title">Card title</h5>
+											<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+											<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="card mb-3" style="max-width: 540px;">
+								<div class="row no-gutters">
+									<div class="ic_ct1 col-xl-4 col-lg-3 col-md-3 col-sm-3 col-3">
+										<i class="fas fa-wrench fa-3x" aria-hidden="true"></i>
+									</div>
+									<div class="ic_ct2 col-xl-8 col-lg-9 col-md-9 col-sm-9 col-9">
+										<div class="card-body">
+											<h5 class="card-title">Card title</h5>
+											<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+											<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="card mb-3" style="max-width: 540px;">
+								<div class="row no-gutters">
+									<div class="ic_ct1 col-xl-4 col-lg-3 col-md-3 col-sm-3 col-3">
+										<i class="fas fa-paint-roller fa-3x" aria-hidden="true"></i>
+									</div>
+									<div class="ic_ct2 col-xl-8 col-lg-9 col-md-9 col-sm-9 col-9">
+										<div class="card-body">
+											<h5 class="card-title">Card title</h5>
+											<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+											<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="card mb-3" style="max-width: 540px;">
+								<div class="row no-gutters">
+									<div class="ic_ct1 col-xl-4 col-lg-3 col-md-3 col-sm-3 col-3">
+										<i class="fas fa-hammer fa-3x" aria-hidden="true"></i>
+									</div>
+									<div class="ic_ct2 col-xl-8 col-lg-9 col-md-9 col-sm-9 col-9">
+										<div class="card-body">
+											<h5 class="card-title">Card title</h5>
+											<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+											<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+					<img src="images/man.png" alt="">
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="button_class row" >
+				<div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+					<p>Contactors & Contruction Managers Since 1981</p>
+				</div>
+				<!--<div class="col-xl-0 col-lg-4 col-md-4 col-sm-4 col-4"></div> -->
+				<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+					<button type=""><span>GET A QUOTE</span></button>
+				</div>
+				<!-- <div class="col-xl-0 col-lg-4 col-md-4 col-sm-4 col-4"></div> -->
+			</div>
+		</div>
+		
+		<div class="card text-center" style="padding-top: 40px;">
+			<div class="card-header name-content">
+				<h2>WHAT OTHER SAY ABOUT US</h2>
+				<hr >
+			</div>
+			<div class="rit card-body container" >
+
+				<h5 class="card-title">Special title treatment Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h5>
+				<p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet.With supporting text below as a natural lead-in to additional content.</p>
+			</div>
+		</div>
+		<!-- =============== -->
+
+		<!-- ================ -->
+		<div class="demo" style="padding-bottom: 70px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<div class="our-team1">
+							<div class="pic">
+								<img src="images/1.jpg" alt="">
+							</div>
+							<ul class="social">
+								<li><a href="#" class="fab fa-facebook"></a></li>
+								<li><a href="#" class="fab fa-google-plus"></a></li>
+								<li><a href="#" class="fab fa-twitter"></a></li>
+							</ul>
+							<div class="team-content1">
+								<h3 class="title">Williamson</h3>
+								<span class="post">Web Developer</span>
+							</div>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo fringilla pharetra. Proin sodales risus et nunc volutpat.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="our-team1">
+							<div class="pic">
+								<img src="images/man.png" alt="">
+							</div>
+							<ul class="social">
+								<li><a href="#" class="fab fa-facebook"></a></li>
+								<li><a href="#" class="fab fa-google-plus"></a></li>
+								<li><a href="#" class="fab fa-twitter"></a></li>
+							</ul>
+							<div class="team-content1">
+								<h3 class="title">Kristiana</h3>
+								<span class="post">Web Designer</span>
+							</div>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo fringilla pharetra. Proin sodales risus et nunc volutpat.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="our-team1">
+							<div class="pic">
+								<img src="images/1.jpg" alt="">
+							</div>
+							<ul class="social">
+								<li><a href="#" class="fab fa-facebook"></a></li>
+								<li><a href="#" class="fab fa-google-plus"></a></li>
+								<li><a href="#" class="fab fa-twitter"></a></li>
+							</ul>
+							<div class="team-content1">
+								<h3 class="title">Williamson</h3>
+								<span class="post">Web Developer</span>
+							</div>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac eros lacus. Sed commodo fringilla pharetra. Proin sodales risus et nunc volutpat.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- ======================= -->
+		<div class="container-fluid ctn-x">
+			<div class="row ctn_img">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+					<img src="images/group.jpg" alt="">
+				</div>
+				<div class="container col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+					<div class="card text-center" >
+						<div class="card-header name-content">
+							<h4>WHY CHOOSE US</h4>
+							<hr >
+						</div>
+
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+						<div id="accordion" role="tablist">
+							<div class="container ">
+								<div class="" role="tab" id="headingOne">
+									<h5 class="mb-0">
+										<i class="fa fa-check" aria-hidden="true"></i>	
+										<a class="" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Employees have many years of experience
+										</a>
+									</h5>
+								</div>
+								<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi vero aut iste non ullam nulla corrupti voluptas atque!</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" role="tab" id="headingTwo">
+									<h5 class="mb-0">
+										<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											Quality construction continues after the project
+										</a>
+									</h5>
+								</div>
+								<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+									<div class="card-body">
+										<p>Lorem20 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, in.</p>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" role="tab" id="headingThree">
+									<h5 class="mb-0">
+										<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											We use technology to do the job mare quickly
+										</a>
+									</h5>
+								</div>
+								<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+									<div class="card-body">
+										<p>Lorem20 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores, sed optio minima quo iste.</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ==============uor team=============== -->
+		<div class="card text-center" style="padding-top: 40px;">
+			<div class="card-header name-content">
+				<h2>OUR TEAM</h2>
+				<hr >
+			</div>
+			<div class="rit card-body container" >
+
+				<h5 class="card-title">Special title treatment Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h5>
+				<p class="card-text">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet.With supporting text below as a natural lead-in to additional content.</p>
+			</div>
+		</div>
+		<!-- =============== -->
+		<div class="container ct-of">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="images/1.jpg">
+						</div>
+						<div class="team-content">
+							<h3 class="title">Williamson</h3>
+							<span class="post">Buider manager</span>
+							<ul class="social">
+								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="images/2.jpg">
+						</div>
+						<div class="team-content">
+							<h3 class="title">Kristiana</h3>
+							<span class="post">uider manager</span>
+							<ul class="social">
+								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="our-team">
+						<div class="pic">
+							<img src="images/4.jpg">
+						</div>
+						<div class="team-content">
+							<h3 class="title">George slows</h3>
+							<span class="post">uider manager</span>
+							<ul class="social">
+								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- ======================map========== -->
+		<div class="container-fluit">
+			<div id="map" >
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3724.770317751101!2d105.84154471369717!3d21.001842086012946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1555618493682!5m2!1svi!2s" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>		</div>
+				
+			</div>
+			<!-- =========================contact -->
+
+			<div class="container-fluid">
+				
+				
+				<section id="contact">
+					<div class="section-content">
+						<h1 class="section-header">CONTACT <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> US</span></h1>
+
+						<hr size="3px" width="100px" color="red" style="text-align:center;">
+						<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+					</div>
+					<div class="contact-section">
+						<div class="container">
+							<form class="row">
+								<div class="ctu col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 form-line">
+									<ul class="adr">
+										<li>
+											<h5>Address</h5>
+											<p>68 Havemeyer ST, Brooklyn, NY 11211</p>
+											<p>United States</p>
+										</li>
+
+										<li>
+											<h5>Phone number</h5>
+											<p> +14747-121-475</p>
+										</li>
+										<li>
+											<h5>E-mail address</h5>
+											<p>contact@contruction.com</p>
+										</li>
+									</ul>
+								</div>
+								<div class="ctu col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 form-line">
+									<div class="form-group">
+										<label for="exampleInputUsername">Your name</label>
+										<input type="text" class="form-control" id="" placeholder=" Enter Name">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputEmail">Email Address</label>
+										<input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+									</div>	
+									<div class="form-group">
+										<label for="telephone">Mobile No.</label>
+										<input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+									</div>
+								</div>
+								<div class="ctu col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+									<div class="form-group">
+										<label for ="description"> Message</label>
+										<textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+									</div>
+									<div>
+
+										<button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+
+
+
+
+			<div class="container">
+
+
+			<!-- 	<section class="customer-logos slider">
+					<div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+					<div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+					<div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+					<div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+					<div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+					<div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+					<div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+					<div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+					<div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+				</section> -->
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<div class="footer">
+				<ul>
+					<li><a href="https://www.facebook.com/profile.php?id=100012512077239"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/raj-kumar-web-designer/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+				<div class="ct-ft">
+					<img src="images/logo-light@2x.png" alt="">
+					<p>Lorem30 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolores sunt, consequatur cupiditate incidunt optio expedita nihil illo quaerat voluptates!</p>
+				</div>
+			</div>
+			</html>
