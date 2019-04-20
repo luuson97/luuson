@@ -6,10 +6,8 @@ $(document).ready(function(){
 });
 (function ($) {
   $.fn.countTo = function (options) {
-    options = options || {};
-    
+    options = options || {}; 
     return $(this).each(function () {
-      // set options for current element
       var settings = $.extend({}, $.fn.countTo.defaults, {
         from:            $(this).data('from'),
         to:              $(this).data('to'),
@@ -17,45 +15,30 @@ $(document).ready(function(){
         refreshInterval: $(this).data('refresh-interval'),
         decimals:        $(this).data('decimals')
       }, options);
-      
-      // how many times to update the value, and how much to increment the value on each update
       var loops = Math.ceil(settings.speed / settings.refreshInterval),
         increment = (settings.to - settings.from) / loops;
-      
-      // references & variables that will change with each update
       var self = this,
         $self = $(this),
         loopCount = 0,
         value = settings.from,
-        data = $self.data('countTo') || {};
-      
+        data = $self.data('countTo') || {};    
       $self.data('countTo', data);
-      
-      // if an existing interval can be found, clear it first
       if (data.interval) {
         clearInterval(data.interval);
       }
       data.interval = setInterval(updateTimer, settings.refreshInterval);
-      
-      // initialize the element with the starting value
-      render(value);
-      
+      render(value);     
       function updateTimer() {
         value += increment;
-        loopCount++;
-        
-        render(value);
-        
+        loopCount++;        
+        render(value);     
         if (typeof(settings.onUpdate) == 'function') {
           settings.onUpdate.call(self, value);
-        }
-        
+        }        
         if (loopCount >= loops) {
-          // remove the interval
           $self.removeData('countTo');
           clearInterval(data.interval);
           value = settings.to;
-          
           if (typeof(settings.onComplete) == 'function') {
             settings.onComplete.call(self, value);
           }
@@ -86,7 +69,6 @@ $(document).ready(function(){
 }(jQuery));
 
 jQuery(function ($) {
-  // custom formatting example
   $('.count-number').data('countToOptions', {
   formatter: function (value, options) {
     return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
@@ -104,10 +86,6 @@ jQuery(function ($) {
 });
 
 
-
-
-
-
 // ===================
 $(document).on('click', '.panel-heading span.clickable', function(e){
     var $this = $(this);
@@ -123,29 +101,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e){
     
   }
 })
-// ==================trc footer
-// $(document).ready(function(){
-//     $('.customer-logos').slick({
-//         slidesToShow: 6,
-//         slidesToScroll: 1,
-//         autoplay: true,
-//         autoplaySpeed: 1500,
-//         arrows: false,
-//         dots: false,
-//         pauseOnHover: false,
-//         responsive: [{
-//             breakpoint: 768,
-//             settings: {
-//                 slidesToShow: 4
-//             }
-//         }, {
-//             breakpoint: 520,
-//             settings: {
-//                 slidesToShow: 3
-//             }
-//         }]
-//     });
-// });
+
 
 
 $(document).ready(function(){
@@ -187,3 +143,6 @@ $(document).ready(function() {
         autoPlay:true
     });
 });
+$('#blogCarousel').carousel({
+        interval: 5000
+    });
