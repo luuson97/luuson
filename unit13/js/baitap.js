@@ -102,7 +102,7 @@ $(document).on('click', '.panel-heading span.clickable', function(e){
   }
 })
 
-
+// =============image==========
 
 $(document).ready(function(){
 
