@@ -10,11 +10,11 @@
   <li class="breadcrumb-item">
     <a href="index.html">Trang chủ</a>
   </li>
-  <li class="breadcrumb-item active">Quản lý tags</li>
+  <li class="breadcrumb-item active">Quản lý người dùng</li>
 </ol>
 
 <!-- Page Content -->
-<h1>Quản lý tags</h1>
+<h1>Quản lý người dùng</h1>
 <hr>
 <p>This is a great starting point for new custom pages.</p>
 
