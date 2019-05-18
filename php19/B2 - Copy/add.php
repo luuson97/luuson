@@ -25,13 +25,13 @@ if (isset($_SESSION['isLogin'])&&$_SESSION['isLogin']==true) {
             <legend style="text-align: center;padding-top: 30px;"> Lưu thông tin sinh viên vào session!</legend>
             
             <div class="form-group">
-               <p style="color: red;"><?php 
-                    if (isset($_COOKIE['login_msg']))
+               <!-- <p style="color: red;"><?php 
+                   // if (isset($_COOKIE['login_msg']))
                     {
-                        echo $_COOKIE['login_msg'];
+                   //     echo $_COOKIE['login_msg'];
                     }
 
-                ?></p> 
+                ?></p>  -->
                 <label for="">Mã sinh viên</label>
                 <input type="text" class="form-control" id="" placeholder="Nhập vào mã sinh viên" name="code">
             </div>
@@ -59,7 +59,7 @@ if (isset($_SESSION['isLogin'])&&$_SESSION['isLogin']==true) {
                 <input type="text" class="form-control" id="" placeholder="Nhập vào địa chỉ" name="add">
             </div>  
             
-            <button type="submit" class="btn btn-primary info">Login</button>
+            <button type="submit" class="btn btn-primary info">Thêm</button>
         </form>
     </div>
 </body>

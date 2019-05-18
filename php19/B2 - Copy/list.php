@@ -6,6 +6,9 @@
 	}else{
 		$data_arr = array();
 	}
+	// echo "<pre>";
+	// 	print_r($_SESSION['info']);
+	// echo "</pre>";
  ?>
  <!DOCTYPE html>
  <html>
@@ -21,6 +24,14 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+    	th {
+    		text-align: center;
+    	}
+    	td {
+    		text-align: center;
+    	}
+    </style>
  </head>
  <body>
  	<div class="container">
@@ -40,26 +51,27 @@
  		 			<th>#</th>
  		 			<th>Mã sinh viên</th>
  		 			<th>Họ và tên</th>
- 		 			<!-- <th>Số điện thoại</th>
- 		 			<th>Địa chỉ</th> -->
+ 		 			<th>Số điện thoại</th>
  		 			<th>Action</th>
  		 		</tr>
  		 	</thead>
  		 	<tbody>
  		 		<?php 
  		 		$i=0;
- 		 		foreach ($data_arr as $value) {
- 		 			$i++;
+ 		 		foreach ($data_arr as $key =>$value) {
+ 		 			$i++; 
  		 		 ?>	
  		 		<tr>
  		 			<td><?php echo $i; ?></td>
  		 			<td><?php echo $value['code']; ?></td>
  		 			<td><?php echo $value['full_name']; ?></td>
+ 		 			<td><?php echo $value['phone']; ?></td>
  		 			<td>
  		 				<a href="detail.php?code=<?php echo $value['code']; ?>" class="btn btn-success">Detial</a>
  		 				<a href="delete.php?code=<?php echo $value['code']; ?>" class="btn btn-danger">Delete</a>
  		 			</td>
  		 		</tr>
+ 		 		
  		 	<?php } ?>
  		 	</tbody>
  		 </table>

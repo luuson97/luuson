@@ -1,30 +1,27 @@
 <?php 
 	session_start();
+   // include_once('add.php');
    $code = $_POST['code'];
    $full_name = $_POST['full_name'];
    $phone = $_POST['phone'];
    $email = $_POST['email'];
    $gender = $_POST['gender'];
    $address = $_POST['add'];
-   $array = [$code,$full_name,$phone,$email,$gender,$address];
-   if (isset($code)  && isset($full_name) &&isset($phone)&& isset($email) && isset($gender) && isset($address)) {
-   	$_SESSION['isLogin'] = true;
-   	$_SESSION['data']=$array;
-   }else {$_SESSION['isLogin'] = false;}
-   // $_SESSION['maSV']=$maSV;
-   
-   // echo $maSV;
-
+ 
+ 
    $info = array(
-      'ID'     => '123',
-      'NAME'   => 'sƠN',
-      'email'  => '123432dsfds@fasddf.com',
-      'phone'  => '02946743',
+      'code'       => $code,
+      'full_name'  => $full_name,
+      'phone'      => $phone,
+      'email'      => $email,
+      'gender'     => $gender,
+      'address'    => $address,
 
    );
-   $_SESSION['info'] = $info;
+   $_SESSION['info'][]= $info;
+   // unset($_SESSION['info']);
+   // $_SESSION['data']=$_SESSION['info'][];
 
-
-   header('Location: lis.php');
+   header('Location: list.php');
 
 ?>
