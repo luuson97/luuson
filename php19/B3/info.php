@@ -1,9 +1,5 @@
-<?php 
-session_start();
-if (isset($_SESSION['isLogin'])&&$_SESSION['isLogin']==true) {
-    header('Location: delete.php');
-}
-?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,10 +18,8 @@ if (isset($_SESSION['isLogin'])&&$_SESSION['isLogin']==true) {
 </head>
 <body>
     <div class="container">
-        <form action="checkInfo.php" method="POST" role="form">
-            <legend style="text-align: center;padding-top: 30px;"> Lưu thông tin sinh viên vào session!</legend>
-            
-            
+        <form action="checkInfo.php" method="POST"  role="form">
+            <legend style="text-align: center;padding-top: 30px;"> THÔNG TIN KHÁCH HÀNG!!</legend>         
             <div class="form-group">
                 <p style="color: red;"><?php 
                     if (isset($_COOKIE['add_msg']))
@@ -35,17 +29,17 @@ if (isset($_SESSION['isLogin'])&&$_SESSION['isLogin']==true) {
 
                 ?></p>  
                 <label for="">Họ và Tên</label>
-                <input type="text" class="form-control" id="" placeholder="Nhập vào họ và tên" name="full_name">
+                <input type="text" class="form-control" id="" placeholder="Nhập vào họ và tên" name="full_name" >
             </div>  
             <div class="form-group">
                 <label for="">Số Điện Thoại</label>
-                <input type="text" class="form-control" id="" placeholder="Nhập vào số điện thoại" name="phone">
+                <input type="text" class="form-control" id="" placeholder="Nhập vào số điện thoại" name="phone" >
             </div>  
             <div class="form-group">
                 <label for="">Email</label>
-                <input type="text" class="form-control" id="" placeholder="Nhập vào email" name="email">
+                <input type="text" class="form-control" id="" placeholder="Nhập vào email" name="email" >
             </div>  
-            <div class="form-group">
+            <div class="form-group" >
                 <label for="">Giới Tính</label>   <br>
                 <input type="radio" value="Nam"  id="" name="gender">Male 
                 <input type="radio" value="Nữ"  id="" name="gender">Female 
@@ -53,58 +47,12 @@ if (isset($_SESSION['isLogin'])&&$_SESSION['isLogin']==true) {
             </div>  
             <div class="form-group">
                 <label for="">Địa chỉ</label>
-                <input type="text" class="form-control" id="" placeholder="Nhập vào địa chỉ" name="add">
+                <input type="text" class="form-control" id="" placeholder="Nhập vào địa chỉ" name="add" >
             </div>  
-            <?php
-                //cấu hình thông tin do google cung cấp
-                $api_url     = 'https://www.google.com/recaptcha/api/siteverify';
-                $site_key    = '6LfbbKQUAAAAAJQS7aISzybCXrAWvfZKg_Z_bLLA';
-                $secret_key  = '6LfbbKQUAAAAAJRkvCgUa0PfC03Xfykzyv9qgnTQ';
-                  
-                //kiem tra submit form
-                if(isset($_POST['submit']))
-                {
-                    //lấy dữ liệu được post lên
-                    $site_key_post    = $_POST['g-recaptcha-response'];
-                      
-                    //lấy IP của khach
-                    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-                        $remoteip = $_SERVER['HTTP_CLIENT_IP'];
-                    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-                        $remoteip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-                    } else {
-                        $remoteip = $_SERVER['REMOTE_ADDR'];
-                    }
-                     
-                    //tạo link kết nối
-                    $api_url = $api_url.'?secret='.$secret_key.'&response='.$site_key_post.'&remoteip='.$remoteip;
-                    //lấy kết quả trả về từ google
-                    $response = file_get_contents($api_url);
-                    //dữ liệu trả về dạng json
-                    $response = json_decode($response);
-                    $check=false;
-                    if(!isset($response->success))
-                    {
-                        echo 'Captcha khong dung';
-                    }
-                    if($response->success == true)
-                    {
-                  
-                        
-                        header('Location: checkInfo.php');
-                    }else{
-                        echo 'Captcha khong dung';
-                    }
-                }
-            ?>
             
-                <div class="g-recaptcha" data-sitekey="<?php echo $site_key?>"></div>
-                <input type="submit" name="submit" value="Buy" class="btn btn-primary"> 
-             
-                
-            
-                <!-- <button type="submit" class="btn btn-primary info">Buy</button> -->
-                <a href="cart.php"class="btn btn-danger">Giỏ Hàng</a>
+            <div class="g-recaptcha" data-sitekey="<?php echo '6LfbbKQUAAAAAJQS7aISzybCXrAWvfZKg_Z_bLLA'?>"></div>
+            <input type="submit" value="Buy" name="submit"class="btn btn-primary">
+            <a href="cart.php"class="btn btn-danger">Giỏ Hàng</a>
         </form>
     </div>
 </body>

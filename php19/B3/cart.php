@@ -65,7 +65,7 @@ if (isset($_COOKIE['msg'])) {
 						<td><?php echo $product['MaSP']; ?></td>
 						<td><?php echo $product['TenSP']; ?></td>
 						<td>
-							<a href="addCart.php?MaSP=<?php echo $product['MaSP']; ?>" class="btn btn-success">+</a>
+							<a href="addButton.php?MaSP=<?php echo $product['MaSP']; ?>" class="btn btn-success">+</a>
 							<?php echo $product['SoLuong']; ?>
 							<a href="delete.php?MaSP=<?php echo $product['MaSP']; ?>" class="btn btn-warning">-</a> 
 						</td>

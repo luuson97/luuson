@@ -5,11 +5,6 @@
 	if (isset($_SESSION['cart'][$MaSP])) {
 		$_SESSION['cart'][$MaSP]['SoLuong']++;
 		setcookie('msg', 'Đã thêm sản phẩm vào Giỏ!', time() + 3);
-	}else{
-		$product = $products[$MaSP];
-		$product['SoLuong'] = '1';
-		$_SESSION['cart'][$MaSP]=$product;
-		setcookie('msg', 'Đã thêm sản phẩm vào Giỏ!', time() + 3);
 	}
-	header('Location: list_product.php');
+	header('Location: cart.php');
 ?>

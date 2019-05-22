@@ -1,30 +1,3 @@
-<?php 
-	session_start();
-	include_once('email.php');
-	include_once('data.php');
-	if (isset($_SESSION['cart'])) {
-		$products = $_SESSION['cart'];
-	}else $products = '';
-	// echo "<pre>";
- //    	print_r($products);
-	// echo "</pre>";
-	$i = 12;
-	$Tong=1;
-	$email_recive=$_SESSION['info']['email'];
-	$name=$_SESSION['info']['full_name'];
-	// $name='Lưu Hồng Sơn';
-	ob_start();
-	include_once('customerCart.php');
-	$contents=ob_get_contents();
-	ob_clean();
-	
-	;
-	$subject='Mua Hàng Tại Zent PHP 19';
-	// echo $email_recive;
-	send_email($email_recive,$name,$contents,$subject);
-	// header('Location: customerCart.php');
-	session_destroy();
- ?>
  <!DOCTYPE html>
  <html>
  <head>
